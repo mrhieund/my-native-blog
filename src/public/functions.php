@@ -18,3 +18,11 @@ function parseUrl($uri) {
 function isFileExist($filePath) {
     return file_exists($filePath);
 }
+
+function pageNotFound() {
+    $indexClass = 'controllers\\IndexController';
+    $actionName = 'errorAction';
+    require_once '../controllers/IndexController.php';
+    $controller = new $indexClass;
+    $controller->$actionName();
+}

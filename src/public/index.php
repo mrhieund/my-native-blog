@@ -11,4 +11,5 @@ if (isFileExist($filePath)) {
     $con = new $className;
     if (method_exists($con, $actionName))
         $con->$actionName();
+    else pageNotFound();
 }
