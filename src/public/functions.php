@@ -1,5 +1,5 @@
 <?php
-const LOG_FOLDER = 'log/';
+const LOG_FOLDER = '../log/';
 function mylog($msg, $fileName = 'system.log') {
     file_put_contents(LOG_FOLDER . $fileName, $msg . PHP_EOL, FILE_APPEND | LOCK_EX);
 }

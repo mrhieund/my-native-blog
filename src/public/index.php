@@ -12,4 +12,4 @@ if (isFileExist($filePath)) {
     if (method_exists($con, $actionName))
         $con->$actionName();
     else pageNotFound();
-}
+} else pageNotFound();
