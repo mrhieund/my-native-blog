@@ -15,7 +15,7 @@ class IndexController {
     }
 
     public function renderFile($filePath, $needReturn = true) {
-        $realPath = '../views/' . $filePath;
+        $realPath = 'views/' . $filePath;
         $result = require($realPath);
         if ($needReturn)
             return $result;
