@@ -22,7 +22,7 @@ function isFileExist($filePath) {
 function pageNotFound() {
     $indexClass = 'controllers\\IndexController';
     $actionName = 'errorAction';
-    require_once 'controllers/IndexController.php';
+    require_once '../controllers/IndexController.php';
     $controller = new $indexClass;
     $controller->$actionName();
 }

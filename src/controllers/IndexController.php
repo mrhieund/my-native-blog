@@ -8,6 +8,7 @@ class IndexController {
         $this->renderFile('header');
         $editableText = "Index Hello World!!";
         $this->renderFile('editable', array('text' => $editableText));
+        $this->renderFile('notes');
         $this->renderFile('footer');
     }
 
@@ -16,7 +17,7 @@ class IndexController {
     }
 
     public function renderFile($filePath, array $data = array(), $needReturn = true) {
-        $realPath = 'views/' . $filePath . '.php';
+        $realPath = '../views/' . $filePath . '.php';
         $result = require($realPath);
         if ($needReturn)
             return $result;

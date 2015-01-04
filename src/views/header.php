@@ -7,7 +7,7 @@
 <meta name="keywords" content="HTML, HTML5, CSS, JavaScript, PHP, Nguyen Duc Hieu, Hanoi, Vietnam, Singapore">
 <meta name="author" content="Nguyen Duc Hieu">
 <title> Hello Friend </title>
-<link rel="stylesheet" href="public/css/main.css" />
-<link rel="shortcut icon" href="public/images/favicon.png" />
+<link rel="stylesheet" href="css/main.css" type="text/css"/>
+<link rel="shortcut icon" href="images/favicon.png" />
 </head>
 <body>
