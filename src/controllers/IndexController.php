@@ -5,17 +5,18 @@
 namespace controllers;
 class IndexController {
     public function indexAction() {
-        $this->renderFile('header.php');
-        var_dump("Index Hello World!!");
-        $this->renderFile('footer.php');
+        $this->renderFile('header');
+        $editableText = "Index Hello World!!";
+        $this->renderFile('editable', array('text' => $editableText));
+        $this->renderFile('footer');
     }
 
     public function errorAction() {
         var_dump("Page not found");
     }
 
-    public function renderFile($filePath, $needReturn = true) {
-        $realPath = 'views/' . $filePath;
+    public function renderFile($filePath, array $data = array(), $needReturn = true) {
+        $realPath = 'views/' . $filePath . '.php';
         $result = require($realPath);
         if ($needReturn)
             return $result;
