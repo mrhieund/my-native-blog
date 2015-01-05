@@ -9,6 +9,7 @@ class IndexController {
         $editableText = "Index Hello World!!";
         $this->renderFile('editable', array('text' => $editableText));
         $this->renderFile('notes');
+        $this->renderFile('form');
         $this->renderFile('footer');
     }
 
