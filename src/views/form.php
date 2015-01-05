@@ -1,15 +1,21 @@
 <form action="/test" method="post" class="form">
     <div class="name div">
-        <label class="label" for="name">Name:</label>
-        <input class="input" type="text" id="name" name="user_name"/>
+        <label for="name">
+            <span class="label">Name:</span>
+            <input class="input" type="text" id="name" name="username"/>
+        </label>
     </div>
     <div class="email div">
-        <label class="label" for="mail">E-mail:</label>
-        <input class="input" type="email" id="mail" name="user_email"/>
+        <label for="mail">
+            <span class="label">E-mail:</span>
+            <input class="input" type="email" id="mail" name="email"/>
+        </label>
     </div>
     <div class="msg div">
-        <label class="label" for="msg">Message:</label>
-        <textarea class="textarea" id="msg" name="user_message"></textarea>
+        <label for="msg">
+            <span class="label">Message:</span>
+            <textarea class="textarea" id="msg" name="user_message"></textarea>
+        </label>
     </div>
     <div class="button div">
         <button type="submit">Send your message</button>
