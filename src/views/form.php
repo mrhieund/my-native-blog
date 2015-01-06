@@ -1,3 +1,4 @@
+<?php echo $notes; ?>
 <form action="/test" method="post" class="form">
     <div class="name div">
         <label for="name">
