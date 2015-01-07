@@ -6,8 +6,10 @@
 <meta name="description" content="Nguyen Duc Hieu's Notes">
 <meta name="keywords" content="HTML, HTML5, CSS, JavaScript, PHP, Nguyen Duc Hieu, Hanoi, Vietnam, Singapore">
 <meta name="author" content="Nguyen Duc Hieu">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title> Hello Friend </title>
-<link rel="stylesheet" href="css/main.css" type="text/css"/>
-<link rel="shortcut icon" href="images/favicon.png" />
+<link rel="stylesheet" media = "(max-width: 640px)" href="css/main-320.css" type="text/css"/>
+<link rel="stylesheet" media="(min-width: 640px)" href="css/main.css" type="text/css"/>
+<link rel="shortcut icon" href="images/favicon.ico" />
 </head>
 <body>
