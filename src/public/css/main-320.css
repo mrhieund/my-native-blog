@@ -1,9 +1,9 @@
 .blue {
-    color: red;
+    color: green;
 }
 .italic {
     font-style: italic;
-    font-size: 15px;
+    font-size: 12px;
 }
 .form {
     /* Just to center the form on the page */
@@ -20,7 +20,7 @@
 .label {
     /* To make sure that all label have the same size and are properly align */
     display: inline-block;
-    width: 15%;
+    width: 20%;
     text-align: right;
 }
 .input, .textarea {
@@ -29,16 +29,22 @@
     font: 1em sans-serif;
 
     /* To give the same size to all text field */
-    width: 70%;
+    width: 100%;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
     /* To harmonize the look & feel of text field border */
     border: 1px solid #999;
+    padding : 0 10px;
+    margin: 0;
+    background: none;
 }
 .input:focus, .textarea:focus {
     /* To give a little highlight on active elements */
     border-color: #000;
+    outline: none;
+    background : rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 .textarea {
     /* To properly align multiline text fields with their labels */
@@ -49,14 +55,14 @@
 
     /* To allow users to resize any textarea vertically
        It does not work on every browsers */
-    resize: vertical;
+    resize: none;
+    overflow: auto;
+    
 }
 .button {
-    /* To position the buttons to the same position of the text fields */
-    padding-left: 40px; /* same size as the label elements */
-
     /* This extra margin represent roughly the same space as the space
        between the labels and their text fields */
     margin-left: auto;
     margin-right: auto;
+    width: 40%;
 }

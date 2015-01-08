@@ -8,7 +8,8 @@
 <meta name="author" content="Nguyen Duc Hieu">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title> Hello Friend </title>
-<link rel="stylesheet" media = "(max-width: 640px)" href="css/main-320.css" type="text/css"/>
+<link rel="stylesheet" media = "(max-width: 500px)" href="css/main-320.css" type="text/css"/>
+<link rel="stylesheet" media = "(max-width: 640px) and (min-width: 500px)" href="css/main-640.css" type="text/css"/>
 <link rel="stylesheet" media="(min-width: 640px)" href="css/main.css" type="text/css"/>
 <link rel="shortcut icon" href="images/favicon.ico" />
 </head>
