@@ -1,6 +1,9 @@
 <?php
 include_once 'autoload.php';
 include_once 'functions.php';
+
+define("APPLICATION_PATH", dirname(__DIR__) .'/');
+
 $uri = $_SERVER['REQUEST_URI'];
 list($controller, $action, $query) = parseUrl($uri);
 $controllerClass = ucfirst($controller) . 'Controller';

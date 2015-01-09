@@ -3,11 +3,13 @@ namespace Modules\Storage;
 
 class File implements StorageInterface {
 
+    const FILE_PATH = 'data/tmp/';
+
     protected $fileName;
 
     public function __construct($dependencies) {
         if (!empty($dependencies['file_name'])) {
-            $this->fileName = $dependencies['file_name'];
+            $this->fileName = APPLICATION_PATH . static::FILE_PATH . $dependencies['file_name'];
         }
     }
 
