@@ -1,4 +1,5 @@
 <?php
+include_once 'autoload.php';
 include_once 'functions.php';
 $uri = $_SERVER['REQUEST_URI'];
 list($controller, $action, $query) = parseUrl($uri);
