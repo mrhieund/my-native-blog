@@ -1,3 +1,3 @@
-<script src="js/jquery-1.7.1.min.js"></script>
+<script src="release/js/script-minified.js"></script>
 </body>
 </html>
