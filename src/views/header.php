@@ -10,7 +10,7 @@
 <title> Hello Friend </title>
 <link rel="stylesheet" media = "(max-width: 500px)" href="release/css/main-320-minified.css" type="text/css"/>
 <link rel="stylesheet" media = "(max-width: 640px) and (min-width: 500px)" href="release/css/main-640-minified.css" type="text/css"/>
-<link rel="stylesheet" media="(min-width: 640px)" href="release/css/main.css-minified" type="text/css"/>
+<link rel="stylesheet" media="(min-width: 640px)" href="release/css/main-minified.css" type="text/css"/>
 <link rel="shortcut icon" href="images/favicon.ico" />
 </head>
 <body>
