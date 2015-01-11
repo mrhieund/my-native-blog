@@ -10,6 +10,7 @@
 <title> Hello Friend </title>
 <script>
 var loadCss = function(file, minWidth, maxWidth) {
+    console.log('load css ' + file);
     var cssFile = document.createElement('link');
     cssFile.rel = 'stylesheet';
     cssFile.media = '(max-width: ' + maxWidth +'px) and (min-width: ' + minWidth + 'px)';
@@ -18,31 +19,24 @@ var loadCss = function(file, minWidth, maxWidth) {
     header.parentNode.insertBefore(cssFile, header);
 }
 
-function addLoadEvent(func) {
-    var oldonload = window.onload;
-    if (typeof window.onload != 'function') window.onload = func;
-    else {
-        window.onload = function() {
-            if (oldonload) {
-                oldonload();
-            }
-            func();
-        }
-    }
-}
-
 if (window.screen.width >= 640) {
     loadCss('main', 640, window.screen.availWidth);
-    addLoadEvent(loadCss('main-640', 500, 640));
-    addLoadEvent(loadCss('main-320', 0, 500));
+    document.addEventListener("DOMContentLoaded", function(event) {
+        loadCss('main-640', 500, 640);
+        loadCss('main-320', 0, 500);
+    });
 } else if (window.screen.width >= 500) {
-    addLoadEvent(loadCss('main-640', 500, 640));
-    addLoadEvent(loadCss('main-320', 0, 500));
-    loadCss('main', 640, window.screen.availWidth);
+    loadCss('main-640', 500, 640);
+    document.addEventListener("DOMContentLoaded", function(event) {
+        loadCss('main', 640, window.screen.availWidth);
+        loadCss('main-320', 0, 500);
+    });
 } else if (window.screen.width < 500) {
-    addLoadEvent(loadCss('main-320', 0, 500));
-    addLoadEvent(loadCss('main-640', 500, 640));
-    loadCss('main', 640, window.screen.availWidth);
+    loadCss('main-320', 0, 500);
+    document.addEventListener("DOMContentLoaded", function(event) {
+        loadCss('main-640', 500, 640);
+        loadCss('main', 640, window.screen.availWidth);
+    });
 }
 
 </script>
