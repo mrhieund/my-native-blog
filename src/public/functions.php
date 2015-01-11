@@ -20,9 +20,9 @@ function isFileExist($filePath) {
 }
 
 function pageNotFound() {
-    $indexClass = 'controllers\\IndexController';
+    $indexClass = 'Controllers\\IndexController';
     $actionName = 'errorAction';
-    require_once '../controllers/IndexController.php';
+    require_once '../Controllers/IndexController.php';
     $controller = new $indexClass;
     $controller->$actionName();
 }

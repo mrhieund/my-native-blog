@@ -1,5 +1,5 @@
 <?php
-namespace controllers;
+namespace Controllers;
 
 use Modules\Storage\File;
 
