@@ -1,5 +1,5 @@
 array (
-  'username' => 'test',
-  'email' => 'test@test.com',
-  'user_message' => 'xin chao test',
+  'username' => '',
+  'email' => '',
+  'user_message' => '',
 )
