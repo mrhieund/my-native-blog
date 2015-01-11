@@ -3,7 +3,6 @@ include_once 'autoload.php';
 include_once 'functions.php';
 include_once 'config.php';
 define("APPLICATION_PATH", dirname(__DIR__) .'/');
-var_dump($_SERVER);
 $env = empty($_SERVER['APPLICATION_ENV']) ? PRODUCTION : $_SERVER['APPLICATION_ENV'];
 define("APPLICATION_ENV", $env);
 
