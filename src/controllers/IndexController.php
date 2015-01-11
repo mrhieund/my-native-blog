@@ -5,6 +5,7 @@
 namespace controllers;
 class IndexController {
     public function indexAction() {
+        header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
         $this->render('header');
         $editableText = "Index Hello World!!";
         $this->render('editable', array('text' => $editableText));
