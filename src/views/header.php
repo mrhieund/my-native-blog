@@ -47,4 +47,12 @@ if (window.screen.width >= 640) {
 </noscript>
 <link rel="shortcut icon" href="images/favicon.ico" />
 </head>
-<body>
+<style>
+    .hide { display: none}
+</style>
+<body class='hide'>
+<script>
+    var body = document.getElementsByTagName('body')[0];
+    body.className = '';
+    console.log('show body');
+</script>
