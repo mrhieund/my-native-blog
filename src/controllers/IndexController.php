@@ -3,10 +3,17 @@
  *
  */
 namespace controllers;
+use Modules\Tracking\GoogleAnalytic;
+
 class IndexController {
     public function indexAction() {
         header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
         $this->render('header');
+        $tracking = new GoogleAnalytic();
+        $script = $tracking->loadScript();
+        $create = $tracking->create();
+        $view = $tracking->view();
+        $this->render('tracking', array('script' => $script, 'create' => $create, 'view' => $view));
         $editableText = "Index Hello World!!";
         $this->render('editable', array('text' => $editableText));
         $notes = $this->renderPartial('notes');

@@ -1,8 +1,11 @@
 <?php
 include_once 'autoload.php';
 include_once 'functions.php';
-
+include_once 'config.php';
 define("APPLICATION_PATH", dirname(__DIR__) .'/');
+
+$env = empty($_SERVER['APPLICATION_ENV']) ? PRODUCTION : $_SERVER['APPLICATION_ENV'];
+define("APPLICATION_ENV", $env);
 
 $uri = $_SERVER['REQUEST_URI'];
 list($controller, $action, $query) = parseUrl($uri);

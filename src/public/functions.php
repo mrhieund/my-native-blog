@@ -26,3 +26,12 @@ function pageNotFound() {
     $controller = new $indexClass;
     $controller->$actionName();
 }
+
+function isProduction() {
+    if (defined("APPLICATION_ENV")) {
+        if (APPLICATION_ENV != DEVELOPMENT) return true;
+        else return false;
+    } else {
+        return true;
+    }
+}
